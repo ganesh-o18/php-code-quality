@@ -10,7 +10,5 @@ RUN php -r "unlink('composer-setup.php');"
 RUN mv composer.phar /usr/local/bin/composer
 
 RUN mkdir /phplint && cd /phplint && composer require ganesh-o18/php-code-quality && ln -s /phplint/vendor/bin/ganeh_code /usr/local/bin/ganesh_code
-
-COPY "entrypoint.sh" "entrypoint.sh"
-RUN chmod +x entrypoint.sh
-ENTRYPOINT ["entrypoint.sh"]
+RUN set -e
+ENTRYPOINT ["ganesh_code"]
