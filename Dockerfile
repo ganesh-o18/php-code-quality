@@ -9,7 +9,7 @@ RUN php -r "unlink('composer-setup.php');"
 
 RUN mv composer.phar /usr/local/bin/composer
 
-RUN mkdir /phplint && cd /phplint && composer require overtrue/phplint && ln -s /phplint/vendor/bin/phplint /usr/local/bin/phplint
+RUN mkdir /phplint && cd /phplint && composer require ganesh-o18/php-code-quality && ln -s /phplint/vendor/bin/code /usr/local/bin/code
 
 COPY "entrypoint.sh" "/entrypoint.sh"
 RUN chmod +x /entrypoint.sh
