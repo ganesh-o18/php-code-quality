@@ -1,4 +1,4 @@
-FROM php:7.3-cli
+FROM php:7.3-apache
 
 RUN apt-get update && apt-get -y install zip unzip
 
@@ -8,7 +8,7 @@ RUN php composer-setup.php
 RUN php -r "unlink('composer-setup.php');"
 
 RUN mv composer.phar /usr/local/bin/composer
-RUN mkdir /phplint && cd /phplint && composer require ganesh-o18/php-code-quality && ln -s /phplint/vendor/bin/ganeh_code /usr/local/bin/ganesh_code
+RUN mkdir /phplint && cd /phplint && composer require ganesh-o18/php-code-quality && ln -s /phplint/vendor/bin/ganesh_code /usr/local/bin/ganesh_code
 
 COPY "entrypoint.sh" "/entrypoint.sh"
 RUN chmod +x /entrypoint.sh

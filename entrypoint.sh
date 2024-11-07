@@ -1,4 +1,3 @@
-#!/bin/bash
-set -e
+#!/bin/sh
 
-echo "hello world"
+ganesh_code
