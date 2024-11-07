@@ -16,12 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v1
-        - uses: ganesh-o18/php-code-quality
+        - uses: ganesh-o18/php-code-quality@master
 ```
 
 If provided, a `.phplint.yml` file in the root will be used for configuration during run of the Action.
-
-## See it in practice
-
-You can find a working and not working PR here:
-https://github.com/michaelw90/PHP-Lint-Demo/pulls
