@@ -1,4 +1,4 @@
 #!/bin/sh
 
 pwd
-ls -la
+cat index.php
