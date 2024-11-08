@@ -2,4 +2,3 @@
 
 pwd
 ganesh_code ./
-ls -la
