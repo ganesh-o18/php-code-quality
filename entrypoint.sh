@@ -1,4 +1,4 @@
 #!/bin/sh
 
 pwd
-cat index.php
+ganesh_code ./
