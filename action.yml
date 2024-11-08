@@ -1,5 +1,5 @@
-name: 'PHP Lint'
-description: 'Run Lint Against Pull Request'
+name: 'PHP Camel Case'
+description: 'Run Camel Case check against PR'
 author: 'Ganesh G'
 runs:
   using: 'docker'
