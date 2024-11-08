@@ -1,9 +1,3 @@
-# GitHub Action for PHPLint
-
-GitHub Action implementation of the PHPLint Package provided by [@Overtrue/phplint](https://github.com/overtrue/phplint). 
-
-## Usage
-
 Use with [GitHub Actions](https://github.com/features/actions)
 
 _.github/workflows/phplint.yml_
