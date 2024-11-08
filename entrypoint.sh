@@ -1,3 +1,4 @@
 #!/bin/sh
 
-ganesh_code
+pwd
+ls -la
